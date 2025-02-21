@@ -129,32 +129,4 @@
           {"role": "user", "content": "Hello, world"}
       ]
   }'
-  
-- **Groq**
-
-
-
-- **Endpoint:** `/api/proxy/groq`
-
-- **Method:** `POST`
-
-- **Description:**  Proxies requests to the Groq API.  Make sure to set the `GROQ_API_KEY` environment variable with your Groq API key.
-
-- **Example Usage (curl):**
-
-  ```bash
-
-  curl -X POST \
-
-    http://your-proxy-server/api/proxy/groq \
-
-    -H 'Content-Type: application/json' \
-
-    -d '{
-
-      "model": "mixtral-8x7b-32768",  {{  请根据 Groq API 的模型名称进行调整 }}
-
-      "messages": [{"role": "user", "content": "Hello from Groq Proxy!"}]
-
-    }'
   ```
