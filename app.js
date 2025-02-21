@@ -138,7 +138,7 @@ app.post('/api/proxy/anthropic', async (req, res) => {
 
 app.post('/api/proxy/groq', async (req, res) => {
     try {
-        const targetURL = new URL('https://api.groq.com/openai/v1/chat/completions'); // Groq API 端点
+        const targetURL = new URL('https://api.groq.com/openai'); // Groq API 端点
         const apiKey = GROQ_API_KEY; // 使用 Groq API 密钥
 
         if (!apiKey) {
